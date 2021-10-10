@@ -13,15 +13,13 @@ PRE-REQUIREMENT
 
 1. Buat Database baru di MS SQL Server yang ada beri nama restfulapi
 2. Buat folder restfulsvr
-3. Ketik command berikut dari terminal :\>git clone https://github.com/JerryPeter/bitapi.git . 
+3. Ketik command berikut dari terminal :\>git clone git remote add origin https://github.com/JerryPeter/restfulapi.git . 
 4. Sekarang pada folder kita sudah ada semua script hasil cloning dari GITHUB
-5
-5. Edit configurasi koneksi ke database pada file config\config.json
-6. Install paket npm yang diperlukan, dengan mengetikan command berikut dari terminal :\>npm install
-7. Jalankan database migration dengan command berikut dari terminal :\>npx sequelize-cli db:migrate
-- Step ini akan membuat struktur table yang diperlukan kedalam database yang telah di setting dalam file config
-8. Lakukan seeding data default dengan command berikut dari terminal :\>npx sequelize-cli db:seed:all
-- Step ini akan membuat beberapa data default untuk kebutuhan aplikasi
+5. Masuk kedalam directory baru RESTFULAPI
+6. Edit configurasi koneksi ke database pada file config\config.json
+7. Install paket npm yang diperlukan, dengan mengetikan command berikut dari terminal :\>npm install
+8. Jalankan database migration dengan command berikut dari terminal :\>npx sequelize-cli db:migrate
+- Step ini akan membuat struktur table yg diperlukan kedalam database yg telah disetting pada config
 9. Setelah selesai coba running aplikasi dengan command berikut dari terminal :\>npm start
 10. Buka browser dan akses dari url http:\\localhost:3000
 ```
@@ -32,7 +30,7 @@ Untuk pengunaan bisa diakses dari POSTMAN / INSOMNIA / THUNDER CLIENT dan lainny
 
 ```textile
 I. REGISTER NEW USER 
-1. Gunakan API SignUp dengan Method POST untuk register user baru localhost:3000/users/signup
+1. Gunakan API CREATE dengan Method POST untuk register user baru localhost:3000/users/create
 2. Pada bagian body gunakan JSON berikut sebagai payload parameter
 {
 	"username":"mhealtbank",
@@ -69,7 +67,6 @@ II. CRUD (CREATE, READ, UPDATE & DELETE) untuk data USER contoh pengunaan :
 1. Sebelum mengakses CRUD DATA pastikan sudah login untuk mendapatkan JWT Token, karena token ini akan digunakan untuk identifikasi
 
 CREATE = http:\\localhost:3000\create <-- Pakai POST Method
-- Sama seperti API SignUp Namun tidak mengunakan Encript Password
 - Payload JSON parameter
 {
 	"username":"mhealtbank",
@@ -84,6 +81,8 @@ CREATE = http:\\localhost:3000\create <-- Pakai POST Method
 }
 
 READ = http:\\localhost:3000\users <-- Pakai GET Method
+
+
 UPDATE = http:\\localhost:3000\users\1 <-- Pakai PATCH Method, dengan kirim data pada Body
 DELETE = http:\\localhost:3000\users\1 <-- Pakai DELETE Method, dengan kirim data pada Body
 ```
