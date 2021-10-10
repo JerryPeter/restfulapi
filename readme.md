@@ -9,7 +9,7 @@ Gunakan langkah berikut untuk installasi
 ```textile
 PRE-REQUIREMENT
 - Pastikan Node sudah terinstall di local computer sebelum melalukan step dibawah ini
-- Minimal Node.Js Versi 14
+- Minimal Node.Js Versi 14.17.5
 
 1. Buat Database baru di MS SQL Server yang ada beri nama restfulapi
 2. Buat folder restfulsvr
