@@ -82,8 +82,23 @@ CREATE = http:\\localhost:3000\create <-- Pakai POST Method
 }
 
 READ = http:\\localhost:3000\users <-- Pakai GET Method
+- Pastikan masukan Bearer parameter mengunakan JWT Token yang didapat setelah login
+- JWT Token digunakan untuk otorisasi data yg dapat dilihat
 
 
 UPDATE = http:\\localhost:3000\users\1 <-- Pakai PATCH Method, dengan kirim data pada Body
+- Pastikan masukan Bearer parameter mengunakan JWT Token yang didapat setelah login
+- JWT Token digunakan untuk otorisasi data yg dapat diupdate
+
 DELETE = http:\\localhost:3000\users\1 <-- Pakai DELETE Method, dengan kirim data pada Body
+- Pastikan masukan Bearer parameter mengunakan JWT Token yang didapat setelah login
+- JWT Token digunakan untuk otorisasi data yg dapat didelete
+
 ```
+
+## Cara pengunaan
+
+Jika mengunakan THUNDER CLIENT pada Visual Studio Code dapat mengunakan file thunder-collection_RESTULAPI.json
+yang disertakan pada project ini untuk mencoba akses API yang ada
+
+
