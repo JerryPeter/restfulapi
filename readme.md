@@ -14,7 +14,7 @@ PRE-REQUIREMENT
 1. Buat Database baru di MS SQL Server yang ada beri nama restfulapi
 2. Buat folder restfulsvr
 3. Ketik command berikut dari terminal 
-    :\>git clone git remote add origin https://github.com/JerryPeter/restfulapi.git . 
+    :\>git clone https://github.com/JerryPeter/restfulapi.git . 
 4. Sekarang pada folder kita sudah ada semua script hasil cloning dari GITHUB
 5. Masuk kedalam directory baru RESTFULAPI
 6. Edit configurasi koneksi ke database pada file config\config.json
