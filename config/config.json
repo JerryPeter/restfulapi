@@ -1,9 +1,9 @@
 {
   "development": {
     "username": "sa",
-    "password": "sysadmin00",
+    "password": "",
     "database": "restfulapi",
-    "host": "JRRYPTR",
+    "host": "",
     "dialect": "mssql"
   },
   "test": {
